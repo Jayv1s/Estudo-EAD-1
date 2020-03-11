@@ -1,8 +1,8 @@
-Create a list;
-Increment the list with random numbers;
+Create a list; (DONE)
+Increment the list with random numbers; (DONE)
 
-Create a stack;
-Increment the stack with the pair numbers of the list;
+Create a stack; (DONE)
+Increment the stack with the pair numbers of the list; (DONE)
 
-Create a queue
-Increment the queue with the odd numbers of the list;
+Create a queue; (DOING)
+Increment the queue with the odd numbers of the list; (DOING)
