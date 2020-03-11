@@ -1,0 +1,6 @@
+# ignore an entire directory
+/obj/
+/bin/
+
+# ignore a file type
+*.csproj
