@@ -9,12 +9,55 @@ namespace PracticeExercise
     /*
         Create a generic list that:
         -Increment a STACK with pair numbers of the list; (DONE)
-        -Increment a QUEUE with odd numbers of the list; (DOING)
+        -Increment a QUEUE with odd numbers of the list; (DONE)
     */
     class Element
     {
         public int value;
         public Element next;
+
+    }
+
+    class Queue
+    {
+        private Element First;
+        private Element Last;
+        private Element Aux;
+
+        public Queue()
+        {
+            First = null;
+            Last = null;
+        }
+
+        public void InsertIntoQueue(int num)
+        {
+            Element newValue = new Element();
+            newValue.value = num;
+            if (First == null)
+            {
+                First = newValue;
+                Last = newValue;
+            }
+            else
+            {
+                Last.next = newValue;
+                Last = newValue;
+            }
+        }
+
+        public void ShowQueue()
+        {
+            Console.WriteLine("--------------------------------");
+            Console.WriteLine("QUEUE: ");
+            Aux = First;
+            while (Aux != null)
+            {
+                Console.WriteLine(" {0}", Aux.value);
+                Aux = Aux.next;
+            }
+            Console.ReadKey();
+        }
 
     }
 
@@ -31,7 +74,7 @@ namespace PracticeExercise
             Element newValue = new Element();
             newValue.value = num;
 
-            if(Top == null)
+            if (Top == null)
             {
                 Top = newValue;
             }
@@ -43,8 +86,10 @@ namespace PracticeExercise
         }
         public void ShowStack()
         {
+            Console.WriteLine("--------------------------------");
+            Console.WriteLine("STACK: ");
             Aux = Top;
-            while (Aux.next != null)
+            while (Aux != null)
             {
                 Console.WriteLine(" {0}", Aux.value);
                 Aux = Aux.next;
@@ -70,7 +115,7 @@ namespace PracticeExercise
             newValue.value = num;
 
 
-            if(Start == null)
+            if (Start == null)
             {
                 Start = newValue;
                 Final = newValue;
@@ -85,22 +130,28 @@ namespace PracticeExercise
         public void ShowList()
         {
             Stack newStack = new Stack();
+            Queue newQueue = new Queue();
             Aux = Start;
-            while(Aux.next != null)
+            while (Aux != null)
             {
-                if(Aux.value % 2 == 0)
+                if (Aux.value % 2 == 0)
                 {
                     newStack.InsertStack(Aux.value);
+                }
+                else
+                {
+                    newQueue.InsertIntoQueue(Aux.value);
                 }
                 Console.WriteLine(" {0}", Aux.value);
                 Aux = Aux.next;
             }
             Console.ReadKey();
-            Console.WriteLine("STACK: ");
             newStack.ShowStack();
+            newQueue.ShowQueue();
         }
- 
+
     }
+
     class Program
     {
         static void Main(string[] args)
@@ -108,7 +159,7 @@ namespace PracticeExercise
             List genericList = new List();
             Random rdmNumber = new Random();
             int num = 0;
-            for(int i = 0; i < 20; i++)
+            for (int i = 0; i < 5; i++)
             {
                 num = rdmNumber.Next(0, 15);
                 genericList.InsertList(num);
@@ -117,4 +168,5 @@ namespace PracticeExercise
             genericList.ShowList();
         }
     }
+
 }
