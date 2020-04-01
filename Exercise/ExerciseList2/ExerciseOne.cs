@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Threading;
 
 namespace Exercise1
@@ -50,6 +50,22 @@ namespace Exercise1
                 Aux = Aux.next;
             }
         }
+
+        public void RemoveFromQueue(int number)
+        {
+            Aux = First;
+
+            while (First.value != number)
+            {
+                Aux = First;
+                First = First.next;
+                Last.next = Aux;
+                Last = Aux;
+                Last.next = null;
+            }
+
+            First = First.next;
+        }
     }
     class Program
     {
@@ -79,6 +95,7 @@ namespace Exercise1
                         if (MyQueue.count == 8)
                         {
                             Console.WriteLine("Sorry, the queue is full!");
+                            Console.ReadKey();
                         }
                         else
                         {
@@ -91,10 +108,16 @@ namespace Exercise1
                         Console.Clear();
 
                         MyQueue.ShowTheQueue();
+                        Console.ReadKey();
 
                         break;
                     case 3:
                         Console.Clear();
+
+                        Console.Write("What number do you want to remove? ");
+                        number = int.Parse(Console.ReadLine());
+                        MyQueue.RemoveFromQueue(number);
+                        Console.ReadKey();
 
                         break;
                     case 9:
