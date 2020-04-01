@@ -1,0 +1,11 @@
+C:\Users\João V. S. Gonçalves\Desktop\Estudo-EAD-1\Queue\SimpleQueue\Simple queue project\bin\Debug\netcoreapp2.1\Simple queue project.deps.json
+C:\Users\João V. S. Gonçalves\Desktop\Estudo-EAD-1\Queue\SimpleQueue\Simple queue project\bin\Debug\netcoreapp2.1\Simple queue project.runtimeconfig.json
+C:\Users\João V. S. Gonçalves\Desktop\Estudo-EAD-1\Queue\SimpleQueue\Simple queue project\bin\Debug\netcoreapp2.1\Simple queue project.runtimeconfig.dev.json
+C:\Users\João V. S. Gonçalves\Desktop\Estudo-EAD-1\Queue\SimpleQueue\Simple queue project\bin\Debug\netcoreapp2.1\Simple queue project.dll
+C:\Users\João V. S. Gonçalves\Desktop\Estudo-EAD-1\Queue\SimpleQueue\Simple queue project\bin\Debug\netcoreapp2.1\Simple queue project.pdb
+C:\Users\João V. S. Gonçalves\Desktop\Estudo-EAD-1\Queue\SimpleQueue\Simple queue project\obj\Debug\netcoreapp2.1\Simple queue project.csprojAssemblyReference.cache
+C:\Users\João V. S. Gonçalves\Desktop\Estudo-EAD-1\Queue\SimpleQueue\Simple queue project\obj\Debug\netcoreapp2.1\Simple queue project.csproj.CoreCompileInputs.cache
+C:\Users\João V. S. Gonçalves\Desktop\Estudo-EAD-1\Queue\SimpleQueue\Simple queue project\obj\Debug\netcoreapp2.1\Simple queue project.AssemblyInfoInputs.cache
+C:\Users\João V. S. Gonçalves\Desktop\Estudo-EAD-1\Queue\SimpleQueue\Simple queue project\obj\Debug\netcoreapp2.1\Simple queue project.AssemblyInfo.cs
+C:\Users\João V. S. Gonçalves\Desktop\Estudo-EAD-1\Queue\SimpleQueue\Simple queue project\obj\Debug\netcoreapp2.1\Simple queue project.dll
+C:\Users\João V. S. Gonçalves\Desktop\Estudo-EAD-1\Queue\SimpleQueue\Simple queue project\obj\Debug\netcoreapp2.1\Simple queue project.pdb
